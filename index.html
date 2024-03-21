@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+      <div class="container">
+           <div>
+            <h1>Password Generator</h1>
+           </div>
+           <div class="display-container">
+              <input type="text" placeholder="password"  readonly class="dispaly" data-passDisplay>
+              <button class="copy-btn"> 
+                  <span class="tooltip" copy-Msg></span>
+                  <img src="./image/copy.svg" class="copy-btn" alt="copy" width="24" height="24">
+              </button>
+           </div>
+           <div class="input-container">
+              <div class="lenght-container">
+                  <p>Password Length</p>
+                  <p data-lenghtNumber>0</p>
+              </div>
+
+
+              <!-- Slider -->
+              <div>
+                  <input type="range" min="1" max="20" class="slider" step="1" data-lengthSlider>
+              </div>
+            <!-- Checked-Box -->
+              <div class="check">
+                <input type="checkbox" class="uppercase">
+                <label for="uppercase">Include Uppercase Letters</label>
+               
+              </div>
+              <div  class="check">
+                <input type="checkbox" class="lowercase">
+                <label for="uppercase">Include Lowercase Letters</label>
+               
+              </div>
+              <div  class="check">
+                <input type="checkbox" class="number">
+                <label for="uppercase">Include Numbers</label>
+               
+              </div>
+              <div  class="check">
+                <input type="checkbox" class="symbol">
+                <label for="uppercase">Include Symbols</label>
+               
+              </div>
+
+              <!-- Strength Section -->
+              <div class="strength-container">
+                 <div>Strength</div>
+                 <div data-indicator class="Indicator"></div>
+              </div>
+              <button id="generate-btn">Generate password</button>
+           </div>
+      </div>
+
+
+
+
+      <!-- <div class="grid place-content-center">
+
+        <iframe width="914" height="514" src="https://www.youtube.com/embed/QM-tDK7lurA" title="Devin is here to take Software job" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+      </div> -->
+    <!-- <div class="flex items-center my-[30px] p-[10px] bg-red-200 w-[800px]"  >    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235527.49482607495!2d75.69903738855072!3d22.72388828988633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1710425585551!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div> -->
+
+
+
+
+        
+    
+</body>
+
+<script src="./script.js">
+
+</script>
+</html>
